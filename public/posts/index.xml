@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on GentleOstrich</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on GentleOstrich</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 14 Jan 2026 02:43:43 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows 11 创建 Hugo 网站</title>
+      <link>http://localhost:1313/posts/windows-11-%E5%88%9B%E5%BB%BA-hugo-%E7%BD%91%E7%AB%99/</link>
+      <pubDate>Wed, 14 Jan 2026 02:43:43 +0800</pubDate>
+      <guid>http://localhost:1313/posts/windows-11-%E5%88%9B%E5%BB%BA-hugo-%E7%BD%91%E7%AB%99/</guid>
+      <description>&lt;p&gt;官方教程不允许使用 CMD、Windows PowerShell 执行各个命令，建议使用 PowerShell 执行命令。Anaconda Powershell Prompt 应该是基于 PowerShell 开发的，因此，本文的命令均在 Anaconda Powershell Prompt 中执行。&lt;/p&gt;&#xA;&lt;h2 id=&#34;安装-hugo&#34;&gt;安装 Hugo&lt;/h2&gt;&#xA;&lt;p&gt;安装 Hugo 前需要安装 Git、Go、Dart Sass。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;安装 &lt;a href=&#34;https://git-scm.com/book/en/v2/Getting-Started-Installing-Git&#34;&gt;Git&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;无论是克隆 Hugo 的 GitHub 仓库，还是基于 Github Page 发布网站，都需要使用 Git。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;安装 &lt;a href=&#34;https://go.dev/doc/install&#34;&gt;Go&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hugo 是基于 Go 语言开发，Go 作为一种高效的编程语言，使得 Hugo 在速度上远超 Hexo 等静态网站搭建技术。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;安装 &lt;a href=&#34;https://gohugo.io/functions/css/sass/#dart-sass&#34;&gt;Dart Sass&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Dart Sass 是 Hugo 开发的网页渲染插件，可以通过 Scoop 和 Chocolatey 两个 Windows 安装器安装，这里选择使用 Scoop 安装。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;安装 &lt;a href=&#34;https://scoop.sh/#/&#34;&gt;Scoop&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;首先 cd 到 C:\ 路径，在 C:\ 路径下执行下述命令。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;按照上述官方命令安装时出现了 PowerShell 禁止运行脚本的报错，使用 &lt;a href=&#34;https://blog.csdn.net/tongxin_tongmeng/article/details/128150906&#34;&gt;以下命令&lt;/a&gt; 替代上面的第一条命令解决该问题。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
