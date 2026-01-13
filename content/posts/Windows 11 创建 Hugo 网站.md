@@ -83,6 +83,17 @@ hugo server
 
   这是因为通过 [hugo_0.154.5_windows-amd64.zip](https://github.com/gohugoio/hugo/releases/download/v0.154.5/hugo_0.154.5_windows-amd64.zip) 安装的不是 extended version，不能对 anake 主题进行渲染。执行命令 `scoop install hugo-extended` 直接从 scoop 中安装 hugo-extended 并删除系统路径中的 hugo 路径即可。
 
+## 网站配置
+
+通过目录下的 hugo.toml 配置网站，其中的 baseURL 设置为生产网站。
+
+```toml
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'ananke'
+```
+
 ## 内容添加
 
 向网站中添加一个新文章：
@@ -108,17 +119,6 @@ hugo server --buildDrafts
 hugo server -D
 ```
 
-## 网站配置
-
-通过目录下的 hugo.toml 配置网站，其中的 baseURL 设置为生产网站。
-
-```toml
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'ananke'
-```
-
 ## 网站发布
 
 网站发布指的是 Hugo 在 public 目录下创建静态网站所需的全部文件（包括 HTML 文件、CSS 文件、Javascript 文件、图片得等等），命令如下：
@@ -129,9 +129,163 @@ hugo
 
 ## 网站部署
 
-TODO
+基于 GitHub Page 部署网站。
 
+1. 新建项目，项目名称为：\<username\>.github.io。这意味着这个项目是一个网站，每次 push 后都会进行 action 操作进行网站部署。
 
+2. 将本地 Hugo 仓库与 GitHub 项目仓库进行 remote 关联，代码如下：
+
+   ```shell
+   git remote add origin https://github.com/GentleOstrich/gentleostrich.github.io.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+   报错：
+
+   ```shell
+   git push -u origin mainerror: src refspec main does not match any
+   error: failed to push some refs to 'https://github.com/GentleOstrich/gentleostrich.github.io.git'
+   ```
+
+   原因是最开始本地项目从未 commit 过，所以没有不存在分支 main。执行下述命令即可解决：
+
+   ```shell
+   git commit -m "Initial commit"
+   git push -u origin main
+   ```
+
+3. 设置图片缓存位置
+
+   在 hugo.toml 文件中添加下述内容：
+
+   ```shell
+   [caches]
+     [caches.images]
+       dir = ':cacheDir/images'
+   ```
+
+4. 设置 action 文件
+
+   action 文件的作用是指导 GitHub 如何部署网站的，首先创建相关 hugo.yaml 文件：
+
+   ```shell
+   mkdir -p .github/workflows
+   touch .github/workflows/hugo.yaml
+   ```
+
+   接下来在 hugo.yaml 文件中加入下述内容：
+
+   ```yaml
+   name: Build and deploy
+   on:
+     push:
+       branches:
+         - main
+     workflow_dispatch:
+   permissions:
+     contents: read
+     pages: write
+     id-token: write
+   concurrency:
+     group: pages
+     cancel-in-progress: false
+   defaults:
+     run:
+       shell: bash
+   jobs:
+     build:
+       runs-on: ubuntu-latest
+       env:
+         DART_SASS_VERSION: 1.97.2
+         GO_VERSION: 1.25.5
+         HUGO_VERSION: 0.154.4
+         NODE_VERSION: 24.12.0
+         TZ: Europe/Oslo
+       steps:
+         - name: Checkout
+           uses: actions/checkout@v6
+           with:
+             submodules: recursive
+             fetch-depth: 0
+         - name: Setup Go
+           uses: actions/setup-go@v6
+           with:
+             go-version: ${{ env.GO_VERSION }}
+             cache: false
+         - name: Setup Node.js
+           uses: actions/setup-node@v6
+           with:
+             node-version: ${{ env.NODE_VERSION }}
+         - name: Setup Pages
+           id: pages
+           uses: actions/configure-pages@v5
+         - name: Create directory for user-specific executable files
+           run: |
+             mkdir -p "${HOME}/.local"
+         - name: Install Dart Sass
+           run: |
+             curl -sLJO "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
+             tar -C "${HOME}/.local" -xf "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
+             rm "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
+             echo "${HOME}/.local/dart-sass" >> "${GITHUB_PATH}"
+         - name: Install Hugo
+           run: |
+             curl -sLJO "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+             mkdir "${HOME}/.local/hugo"
+             tar -C "${HOME}/.local/hugo" -xf "hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+             rm "hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+             echo "${HOME}/.local/hugo" >> "${GITHUB_PATH}"
+         - name: Verify installations
+           run: |
+             echo "Dart Sass: $(sass --version)"
+             echo "Go: $(go version)"
+             echo "Hugo: $(hugo version)"
+             echo "Node.js: $(node --version)"
+         - name: Install Node.js dependencies
+           run: |
+             [[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true
+         - name: Configure Git
+           run: |
+             git config core.quotepath false
+         - name: Cache restore
+           id: cache-restore
+           uses: actions/cache/restore@v5
+           with:
+             path: ${{ runner.temp }}/hugo_cache
+             key: hugo-${{ github.run_id }}
+             restore-keys:
+               hugo-
+         - name: Build the site
+           run: |
+             hugo \
+               --gc \
+               --minify \
+               --baseURL "${{ steps.pages.outputs.base_url }}/" \
+               --cacheDir "${{ runner.temp }}/hugo_cache"
+         - name: Cache save
+           id: cache-save
+           uses: actions/cache/save@v5
+           with:
+             path: ${{ runner.temp }}/hugo_cache
+             key: ${{ steps.cache-restore.outputs.cache-primary-key }}
+         - name: Upload artifact
+           uses: actions/upload-pages-artifact@v4
+           with:
+             path: ./public
+     deploy:
+       environment:
+         name: github-pages
+         url: ${{ steps.deployment.outputs.page_url }}
+       runs-on: ubuntu-latest
+       needs: build
+       steps:
+         - name: Deploy to GitHub Pages
+           id: deployment
+           uses: actions/deploy-pages@v4
+   ```
+
+至此，等待 GitHub 项目主页中 Action 显示绿色对勾后，就可以通过网址 \<username\>.github.io 访问网站啦（可能显示绿色对勾后立刻访问网站会出现 403 错误，只需要再等待一会儿就可以正常访问了）
 
 
 
