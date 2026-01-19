@@ -4,21 +4,21 @@
   
     
       <url>
-            <loc>//localhost:6844/</loc>
+            <loc>//localhost:10307/</loc>
             <lastmod>2026-01-15T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>//localhost:6844/posts/</loc>
+            <loc>//localhost:10307/posts/</loc>
             <lastmod>2026-01-15T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>//localhost:6844/posts/sam-3d-object-%E6%95%99%E7%A8%8B/</loc>
+            <loc>//localhost:10307/posts/sam-3d-object-%E6%95%99%E7%A8%8B/</loc>
             <lastmod>2026-01-15T00:00:00+00:00</lastmod>
           </url>
     
@@ -29,7 +29,7 @@
   
     
       <url>
-            <loc>//localhost:6844/posts/windows-11-%E5%88%9B%E5%BB%BA-hugo-%E7%BD%91%E7%AB%99/</loc>
+            <loc>//localhost:10307/posts/windows-11-%E5%88%9B%E5%BB%BA-hugo-%E7%BD%91%E7%AB%99/</loc>
             <lastmod>2026-01-14T00:00:00+00:00</lastmod>
           </url>
     
@@ -38,7 +38,7 @@
   
     
       <url>
-            <loc>//localhost:6844/about/</loc>
+            <loc>//localhost:10307/about/</loc>
           </url>
     
   

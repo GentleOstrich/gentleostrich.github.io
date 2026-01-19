@@ -12,7 +12,7 @@
   class="scroll-smooth"
   data-default-appearance="light"
   data-auto-appearance="true"
-><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=6844&amp;path=livereload" data-no-instant defer></script>
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=10307&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#FFFFFF" />
@@ -26,7 +26,7 @@
   
   <script
     type="text/javascript"
-    src="//localhost:6844/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    src="//localhost:10307/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
     integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
   ></script>
   
@@ -40,7 +40,7 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="//localhost:6844/css/main.bundle.min.a645f3fa02b2ca20e7ef61b236048d95cc9bc2e5b2faf1f0ac0aa85431187c1c.css"
+    href="//localhost:10307/css/main.bundle.min.a645f3fa02b2ca20e7ef61b236048d95cc9bc2e5b2faf1f0ac0aa85431187c1c.css"
     integrity="sha256-pkXz&#43;gKyyiDn72GyNgSNlcybwuWy&#43;vHwrAqoVDEYfBw="
   />
   
@@ -65,7 +65,7 @@
       defer
       type="text/javascript"
       id="script-bundle"
-      src="//localhost:6844/js/main.bundle.min.070067920d02c56c9946beddf173c3447422f0aa791b407cbe01a719ddf5f4dd.js"
+      src="//localhost:10307/js/main.bundle.min.070067920d02c56c9946beddf173c3447422f0aa791b407cbe01a719ddf5f4dd.js"
       integrity="sha256-BwBnkg0CxWyZRr7d8XPDRHQi8Kp5G0B8vgGnGd319N0="
       data-copy="复制"
       data-copied="已复制"
@@ -103,7 +103,7 @@ pip install -e &#39;.[inference]&#39;
   
   
   
-    <link rel="canonical" href="//localhost:6844/posts/sam-3d-object-%E6%95%99%E7%A8%8B/" />
+    <link rel="canonical" href="//localhost:10307/posts/sam-3d-object-%E6%95%99%E7%A8%8B/" />
   
   
   
@@ -119,7 +119,7 @@ pip install -e &#39;.[inference]&#39;
   
   
   
-  <meta property="og:url" content="//localhost:6844/posts/sam-3d-object-%E6%95%99%E7%A8%8B/">
+  <meta property="og:url" content="//localhost:10307/posts/sam-3d-object-%E6%95%99%E7%A8%8B/">
   <meta property="og:site_name" content="GentleOstrich">
   <meta property="og:title" content="SAM 3D Objects 教程">
   <meta property="og:description" content="安装 #参考官方安装教程在服务器上配置环境，服务器全程使用 clash 代理，使用 conda 安装
@@ -129,11 +129,11 @@ pip install -e &#39;.[inference]&#39;
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2026-01-15T00:00:00+00:00">
     <meta property="article:modified_time" content="2026-01-15T00:00:00+00:00">
-    <meta property="og:image" content="//localhost:6844/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature.jpg">
+    <meta property="og:image" content="//localhost:10307/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature.jpg">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="//localhost:6844/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature.jpg">
+  <meta name="twitter:image" content="//localhost:10307/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature.jpg">
   <meta name="twitter:title" content="SAM 3D Objects 教程">
   <meta name="twitter:description" content="安装 #参考官方安装教程在服务器上配置环境，服务器全程使用 clash 代理，使用 conda 安装
 环境配置 ## 克隆项目仓库 git clone https://github.com/facebookresearch/sam-3d-objects.git cd sam-3d-objects # 创建 conda 环境 conda env create -f environments/default.yml conda activate sam3d-objects # 设置 pytorch 等安装的 URL export PIP_EXTRA_INDEX_URL=&#34;https://pypi.ngc.nvidia.com https://download.pytorch.org/whl/cu121&#34; # 安装 sam 3d 核心依赖 pip install -e &#39;.[dev]&#39; pip install -e &#39;.[p3d]&#39; # pytorch3d dependency on pytorch is broken, this 2-step approach solves it # 安装 sam 3d 推理 export PIP_FIND_LINKS=&#34;https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-2.5.1_cu121.html&#34; pip install -e &#39;.[inference]&#39; 下载官方权重文件 #首先需要在 huggingface 上申请许可，笔者使用新邮箱创建了一个新的 huggingface 账户，在申请许可需要填入的个人信息中填写美国地址、学校等等，否则容易被拒。获得许可后，执行：">
@@ -149,7 +149,7 @@ pip install -e &#39;.[inference]&#39;
     
     "abstract": "\u003ch2 id=\u0022安装\u0022 class=\u0022relative group\u0022\u003e安装 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%e5%ae%89%e8%a3%85\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h2\u003e\u003cp\u003e参考\u003ca href=\u0022https:\/\/github.com\/facebookresearch\/sam-3d-objects\/blob\/main\/doc\/setup.md\u0022 target=\u0022_blank\u0022 rel=\u0022noreferrer\u0022\u003e官方安装教程\u003c\/a\u003e在服务器上配置环境，服务器全程使用 clash 代理，使用 conda 安装\u003c\/p\u003e\n\u003ch3 id=\u0022环境配置\u0022 class=\u0022relative group\u0022\u003e环境配置 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%e7%8e%af%e5%a2%83%e9%85%8d%e7%bd%ae\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 class=\u0022chroma\u0022\u003e\u003ccode class=\u0022language-shell\u0022 data-lang=\u0022shell\u0022\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022c1\u0022\u003e# 克隆项目仓库\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003egit clone https:\/\/github.com\/facebookresearch\/sam-3d-objects.git\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022nb\u0022\u003ecd\u003c\/span\u003e sam-3d-objects\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022c1\u0022\u003e# 创建 conda 环境\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003econda env create -f environments\/default.yml\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003econda activate sam3d-objects\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022c1\u0022\u003e# 设置 pytorch 等安装的 URL\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022nb\u0022\u003eexport\u003c\/span\u003e \u003cspan class=\u0022nv\u0022\u003ePIP_EXTRA_INDEX_URL\u003c\/span\u003e\u003cspan class=\u0022o\u0022\u003e=\u003c\/span\u003e\u003cspan class=\u0022s2\u0022\u003e\u0026#34;https:\/\/pypi.ngc.nvidia.com https:\/\/download.pytorch.org\/whl\/cu121\u0026#34;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022c1\u0022\u003e# 安装 sam 3d 核心依赖\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003epip install -e \u003cspan class=\u0022s1\u0022\u003e\u0026#39;.[dev]\u0026#39;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003epip install -e \u003cspan class=\u0022s1\u0022\u003e\u0026#39;.[p3d]\u0026#39;\u003c\/span\u003e \u003cspan class=\u0022c1\u0022\u003e# pytorch3d dependency on pytorch is broken, this 2-step approach solves it\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022c1\u0022\u003e# 安装 sam 3d 推理\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022nb\u0022\u003eexport\u003c\/span\u003e \u003cspan class=\u0022nv\u0022\u003ePIP_FIND_LINKS\u003c\/span\u003e\u003cspan class=\u0022o\u0022\u003e=\u003c\/span\u003e\u003cspan class=\u0022s2\u0022\u003e\u0026#34;https:\/\/nvidia-kaolin.s3.us-east-2.amazonaws.com\/torch-2.5.1_cu121.html\u0026#34;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003epip install -e \u003cspan class=\u0022s1\u0022\u003e\u0026#39;.[inference]\u0026#39;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003ch3 id=\u0022下载官方权重文件\u0022 class=\u0022relative group\u0022\u003e下载官方权重文件 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%e4%b8%8b%e8%bd%bd%e5%ae%98%e6%96%b9%e6%9d%83%e9%87%8d%e6%96%87%e4%bb%b6\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003cp\u003e首先需要在 huggingface 上申请许可，笔者使用新邮箱创建了一个新的 huggingface 账户，在申请许可需要填入的个人信息中填写美国地址、学校等等，否则容易被拒。获得许可后，执行：\u003c\/p\u003e",
     "inLanguage": "zh-Hans",
-    "url" : "\/\/localhost:6844\/posts\/sam-3d-object-%E6%95%99%E7%A8%8B\/",
+    "url" : "\/\/localhost:10307\/posts\/sam-3d-object-%E6%95%99%E7%A8%8B\/",
     "author" : {
       "@type": "Person",
       "name": "GentleOstrich"
@@ -163,7 +163,7 @@ pip install -e &#39;.[inference]&#39;
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "408"
+    "wordCount": "847"
   }
   </script>
     
@@ -174,13 +174,13 @@ pip install -e &#39;.[inference]&#39;
    "itemListElement": [
      {
        "@type": "ListItem",
-       "item": "//localhost:6844/",
+       "item": "//localhost:10307/",
        "name": "",
        "position": 1
      },
      {
        "@type": "ListItem",
-       "item": "//localhost:6844/posts/",
+       "item": "//localhost:10307/posts/",
        "name": "",
        "position": 2
      },
@@ -341,7 +341,7 @@ pip install -e &#39;.[inference]&#39;
   <li class="hidden inline">
     <a
       class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
-      href="//localhost:6844/"
+      href="//localhost:10307/"
       ></a
     ><span class="px-1 text-primary-500">/</span>
   </li>
@@ -350,7 +350,7 @@ pip install -e &#39;.[inference]&#39;
   <li class=" inline">
     <a
       class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
-      href="//localhost:6844/posts/"
+      href="//localhost:10307/posts/"
       >posts</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
@@ -359,7 +359,7 @@ pip install -e &#39;.[inference]&#39;
   <li class="hidden inline">
     <a
       class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
-      href="//localhost:6844/posts/sam-3d-object-%E6%95%99%E7%A8%8B/"
+      href="//localhost:10307/posts/sam-3d-object-%E6%95%99%E7%A8%8B/"
       >SAM 3D Objects 教程</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
@@ -407,7 +407,7 @@ pip install -e &#39;.[inference]&#39;
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-01-15 00:00:00 &#43;0000 UTC">2026-01-15</time><span class="px-2 text-primary-500">&middot;</span><span>408 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
+      <time datetime="2026-01-15 00:00:00 &#43;0000 UTC">2026-01-15</time><span class="px-2 text-primary-500">&middot;</span><span>847 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span>
     
 
     
@@ -421,7 +421,7 @@ pip install -e &#39;.[inference]&#39;
         
           
             <a
-              href="//localhost:6844/topics/%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA/"
+              href="//localhost:10307/topics/%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA/"
               class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
               >三维重建</a
             >
@@ -459,12 +459,12 @@ pip install -e &#39;.[inference]&#39;
       
         <source
           
-            srcset="//localhost:6844/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_899318f2c248f34c.webp 330w,//localhost:6844/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_b1978a027bfec987.webp 660w
+            srcset="//localhost:10307/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_899318f2c248f34c.webp 330w,//localhost:10307/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_b1978a027bfec987.webp 660w
             
-              ,//localhost:6844/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_ef308b74de6da698.webp 1024w
+              ,//localhost:10307/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_ef308b74de6da698.webp 1024w
             
             
-              ,//localhost:6844/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_8a4c3ffac1aa6748.webp 1320w
+              ,//localhost:10307/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_8a4c3ffac1aa6748.webp 1320w
             "
           
           sizes="100vw"
@@ -478,12 +478,12 @@ pip install -e &#39;.[inference]&#39;
         
         
         
-          src="//localhost:6844/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_2039abf95eddb274.jpg" srcset="//localhost:6844/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_e0356ac7b644e6c.jpg 330w,//localhost:6844/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_2039abf95eddb274.jpg 660w
+          src="//localhost:10307/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_2039abf95eddb274.jpg" srcset="//localhost:10307/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_e0356ac7b644e6c.jpg 330w,//localhost:10307/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_2039abf95eddb274.jpg 660w
           
-            ,//localhost:6844/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_f285281d135b8b1c.jpg 1024w
+            ,//localhost:10307/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_f285281d135b8b1c.jpg 1024w
           
           
-            ,//localhost:6844/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_2a8fb396661b6c1a.jpg 1320w
+            ,//localhost:10307/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_2a8fb396661b6c1a.jpg 1320w
           "
           sizes="100vw"
         
@@ -519,7 +519,12 @@ pip install -e &#39;.[inference]&#39;
     <li><a href="#mesh">mesh</a></li>
     <li><a href="#texture">texture</a></li>
     <li><a href="#多视角-sam-3d-object">多视角 sam-3d-object</a></li>
-    <li><a href="#三维重建自己的图片">三维重建自己的图片</a></li>
+    <li><a href="#三维重建自己的图片">三维重建自己的图片</a>
+      <ul>
+        <li><a href="#单视角">单视角</a></li>
+        <li><a href="#多视角">多视角</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -580,7 +585,7 @@ pip install -e &#39;.[inference]&#39;
 <p>设置 <code>with_mesh_postprocess</code> 和 <code>with_texture_postprocess</code> 均为 <code>True</code>，就可以生成带有 texture 的 mesh 了。（导入 Blender 后要把左上角的 Object Mode 改为 Texture Paint）</p>
 <h2 id="多视角-sam-3d-object" class="relative group">多视角 sam-3d-object <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%a4%9a%e8%a7%86%e8%a7%92-sam-3d-object" aria-label="锚点">#</a></span></h2><p><a href="https://github.com/devinli123/MV-SAM3D" target="_blank" rel="noreferrer">项目地址</a></p>
 <p>克隆该项目后发现，<code>sam3d_objects</code> 目录并非原版，在 <code>MV-SAM3D/sam3d_objects/utils</code> 实现了 <code>attetion</code> 机制等进行多视角融合。所以，一开始将原版 <code>sam3d_objects</code> 拷贝到这里是不对的，而是应该根据执行 <code>demo</code> 产生的报错，向该目录中补齐缺少的部分（如 checkpoints 等等） 。</p>
-<h2 id="三维重建自己的图片" class="relative group">三维重建自己的图片 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%b8%89%e7%bb%b4%e9%87%8d%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%9b%be%e7%89%87" aria-label="锚点">#</a></span></h2><p>sam-3d-object 的输入是原始图片和经过 mask 的目标物体图片，所以第一步需要利用某些方法对原图像目标物体做 mask，之后按照 sam-3d-object 的 demo 过程执行即可。<a href="https://github.com/facebookresearch/sam-3d-objects/issues/127" target="_blank" rel="noreferrer">示例代码</a> 如下：</p>
+<h2 id="三维重建自己的图片" class="relative group">三维重建自己的图片 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%b8%89%e7%bb%b4%e9%87%8d%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e5%9b%be%e7%89%87" aria-label="锚点">#</a></span></h2><h3 id="单视角" class="relative group">单视角 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%8d%95%e8%a7%86%e8%a7%92" aria-label="锚点">#</a></span></h3><p>sam-3d-object 的输入是原始图片和经过 mask 的目标物体图片，所以第一步需要利用某些方法对原图像目标物体做 mask，之后按照 sam-3d-object 的 demo 过程执行即可。<a href="https://github.com/facebookresearch/sam-3d-objects/issues/127" target="_blank" rel="noreferrer">示例代码</a> 如下：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># 1. Load SAM3 and segment the image</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Loading SAM3 Model and segmenting: &#39;</span><span class="si">{</span><span class="n">prompt</span><span class="si">}</span><span class="s2">&#39;...&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">Sam3Model</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&#34;facebook/sam3&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
@@ -622,7 +627,190 @@ pip install -e &#39;.[inference]&#39;
 </span></span><span class="line"><span class="cl"><span class="c1"># 3. Save output</span>
 </span></span><span class="line"><span class="cl"><span class="n">output</span><span class="p">[</span><span class="s2">&#34;gs&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">save_ply</span><span class="p">(</span><span class="n">output_path</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Success! Reconstruction saved to: </span><span class="si">{</span><span class="n">output_path</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><p>（SAM3使用SAM3DObjests的环境就可以运行起来）</p>
+<h3 id="多视角" class="relative group">多视角 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%a4%9a%e8%a7%86%e8%a7%92" aria-label="锚点">#</a></span></h3><ol>
+<li>
+<p>多视角图片要经过 <a href="https://huggingface.co/facebook/sam3" target="_blank" rel="noreferrer">SAM3 批处理</a> 生成对应的mask</p>
+</li>
+<li>
+<p>使用方法：<a href="https://github.com/devinli123/multi-view-sam-3d-objects" target="_blank" rel="noreferrer">参考</a>，将该项目中的 <a href="https://github.com/devinli123/multi-view-sam-3d-objects/tree/main/sam3d_objects" target="_blank" rel="noreferrer">sam3d_objects</a> 替换原目录（其中 <a href="https://github.com/devinli123/multi-view-sam-3d-objects/blob/main/sam3d_objects/pipeline/inference_pipeline.py" target="_blank" rel="noreferrer">inference_pipeline.py</a>）实现了多视角重建功能</p>
+</li>
+<li>
+<p>具体代码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">使用 SAM3 和 SAM-3D-Objects 从单张单物品图像和文本提示进行 3D 重建。
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">需要使用代理。
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">argparse</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">device</span> <span class="o">=</span> <span class="s2">&#34;cuda&#34;</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">&#34;cpu&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get_images_and_masks</span><span class="p">(</span><span class="n">images_path</span><span class="p">,</span> <span class="n">prompt</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    使用 SAM3 批处理，根据文本提示生成掩码，
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    :param images_path: 图像路径
+</span></span></span><span class="line"><span class="cl"><span class="s2">    :param prompt: 文本提示
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">from</span> <span class="nn">transformers</span> <span class="kn">import</span> <span class="n">Sam3Processor</span><span class="p">,</span> <span class="n">Sam3Model</span> <span class="c1"># 可不可以不用 tansformers</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Loading images ...&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">images</span> <span class="o">=</span> <span class="n">load_images</span><span class="p">(</span><span class="n">images_path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 1. Load SAM3 and segment the image</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Loading SAM3 Model and segmenting: &#39;</span><span class="si">{</span><span class="n">prompt</span><span class="si">}</span><span class="s2">&#39;...&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">model</span> <span class="o">=</span> <span class="n">Sam3Model</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&#34;facebook/sam3&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">processor</span> <span class="o">=</span> <span class="n">Sam3Processor</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&#34;facebook/sam3&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">text_prompts</span> <span class="o">=</span> <span class="p">[</span><span class="n">prompt</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">images</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">inputs</span> <span class="o">=</span> <span class="n">processor</span><span class="p">(</span><span class="n">images</span><span class="o">=</span><span class="n">images</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">text_prompts</span><span class="p">,</span> <span class="n">return_tensors</span><span class="o">=</span><span class="s2">&#34;pt&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="n">outputs</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="o">**</span><span class="n">inputs</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">results</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">post_process_instance_segmentation</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">outputs</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">threshold</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mask_threshold</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">target_sizes</span><span class="o">=</span><span class="n">inputs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;original_sizes&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">masks</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">result</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">results</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s2">&#34;masks&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;No objects matching </span><span class="si">{</span><span class="n">prompt</span><span class="si">}</span><span class="s2"> were found in image </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mask</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">mask</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">mask</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">masks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mask</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">images</span><span class="p">,</span> <span class="n">masks</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">recon</span><span class="p">(</span><span class="n">images</span><span class="p">,</span> <span class="n">masks</span><span class="p">,</span> <span class="n">output_path</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    使用 SAM-3D-Objects 进行 3D 重建。
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    :param images: 使用 PIL.Image 打开的图片列表
+</span></span></span><span class="line"><span class="cl"><span class="s2">    :param masks: 掩码列表
+</span></span></span><span class="line"><span class="cl"><span class="s2">    :param output_path: 输出路径
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kn">from</span> <span class="nn">inference</span> <span class="kn">import</span> <span class="n">Inference</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">config_path</span> <span class="o">=</span> <span class="s2">&#34;checkpoints/hf/pipeline.yaml&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">inference</span> <span class="o">=</span> <span class="n">Inference</span><span class="p">(</span><span class="n">config_path</span><span class="p">,</span> <span class="nb">compile</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">result</span> <span class="o">=</span> <span class="n">inference</span><span class="o">.</span><span class="n">_pipeline</span><span class="o">.</span><span class="n">run_multi_view</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">view_images</span><span class="o">=</span><span class="n">images</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">view_masks</span><span class="o">=</span><span class="n">masks</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">mode</span><span class="o">=</span><span class="s2">&#34;multidiffusion&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">stage1_inference_steps</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">stage2_inference_steps</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">decode_formats</span><span class="o">=</span><span class="s2">&#34;gaussian,mesh&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">with_mesh_postprocess</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">with_texture_baking</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">use_vertex_color</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="se">\n</span><span class="si">{</span><span class="s1">&#39;=&#39;</span><span class="o">*</span><span class="mi">60</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Inference completed!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Generated coordinates: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;coords&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;coords&#39;</span> <span class="ow">in</span> <span class="n">result</span> <span class="k">else</span> <span class="s1">&#39;N/A&#39;</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="s1">&#39;=&#39;</span><span class="o">*</span><span class="mi">60</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">saved_files</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s1">&#39;glb&#39;</span> <span class="ow">in</span> <span class="n">result</span> <span class="ow">and</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;glb&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span><span class="p">[</span><span class="s1">&#39;glb&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">export</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">output_path</span> <span class="o">/</span> <span class="s2">&#34;result.glb&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">saved_files</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;result.glb&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;✓ GLB file saved to: </span><span class="si">{</span><span class="n">output_path</span> <span class="o">/</span> <span class="s1">&#39;result.glb&#39;</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s1">&#39;gs&#39;</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span><span class="p">[</span><span class="s1">&#39;gs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">save_ply</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">output_path</span> <span class="o">/</span> <span class="s2">&#34;result.ply&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">saved_files</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;result.ply&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;✓ Gaussian Splatting (PLY) saved to: </span><span class="si">{</span><span class="n">output_path</span> <span class="o">/</span> <span class="s1">&#39;result.ply&#39;</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="s1">&#39;gaussian&#39;</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;gaussian&#39;</span><span class="p">],</span> <span class="nb">list</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;gaussian&#39;</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">result</span><span class="p">[</span><span class="s1">&#39;gaussian&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">save_ply</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">output_path</span> <span class="o">/</span> <span class="s2">&#34;result.ply&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="n">saved_files</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;result.ply&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;✓ Gaussian Splatting (PLY) saved to: </span><span class="si">{</span><span class="n">output_path</span> <span class="o">/</span> <span class="s1">&#39;result.ply&#39;</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s1">&#39;mesh&#39;</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;✓ Mesh information generated (included in GLB)&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="se">\n</span><span class="si">{</span><span class="s1">&#39;=&#39;</span><span class="o">*</span><span class="mi">60</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;All output files saved to: </span><span class="si">{</span><span class="n">output_path</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Saved files: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">saved_files</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="s1">&#39;=&#39;</span><span class="o">*</span><span class="mi">60</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">load_images</span><span class="p">(</span><span class="n">images_path</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    加载图像。
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    :param images_path: 图像路径
+</span></span></span><span class="line"><span class="cl"><span class="s2">    :return: 使用 PIL.Image 打开的图片
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">images</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">files</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">images_path</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&#34;*.jpg&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">files</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;No images found in path: </span><span class="si">{</span><span class="n">images_path</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file</span><span class="p">)</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s2">&#34;RGB&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">images</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">images</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">description</span><span class="o">=</span><span class="s2">&#34;Run SAM3D reconstruction from a single image and text prompt.&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;--images_path&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">default</span><span class="o">=</span><span class="s2">&#34;images/bottle&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">help</span><span class="o">=</span><span class="s2">&#34;Path to the input image directory.&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;--prompt&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">default</span><span class="o">=</span><span class="s2">&#34;a bottle&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">help</span><span class="o">=</span><span class="s2">&#34;Text prompt to segment the object of interest.&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">images_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">images_path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">images_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Input path does not exist: </span><span class="si">{</span><span class="n">images_path</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">images_path</span><span class="o">.</span><span class="n">is_dir</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&#34;For multiview reconstruction, images_path should be a directory.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># images = load_images(images_path)    </span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">prompt</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">prompt</span>
+</span></span><span class="line"><span class="cl">    <span class="n">output_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;outputs/</span><span class="si">{</span><span class="n">images_path</span><span class="o">.</span><span class="n">stem</span><span class="si">}</span><span class="s2">/&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">output_path</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">images</span><span class="p">,</span> <span class="n">masks</span> <span class="o">=</span> <span class="n">get_images_and_masks</span><span class="p">(</span><span class="n">images_path</span><span class="p">,</span> <span class="n">prompt</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">recon</span><span class="p">(</span><span class="n">images</span><span class="p">,</span> <span class="n">masks</span><span class="p">,</span> <span class="n">output_path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">main</span><span class="p">()</span>
+</span></span></code></pre></div></li>
+</ol>
+
       </div>
     </section>
     <footer class="max-w-prose pt-8 print:hidden">
@@ -659,12 +847,12 @@ pip install -e &#39;.[inference]&#39;
         alt="GentleOstrich"
         loading="lazy" decoding="async"
         
-          src="//localhost:6844/img/author_hu_108f5f2c1de637fd.jpg" srcset="//localhost:6844/img/author_hu_94d285e0358afd76.jpg 330w,//localhost:6844/img/author_hu_108f5f2c1de637fd.jpg 660w
+          src="//localhost:10307/img/author_hu_108f5f2c1de637fd.jpg" srcset="//localhost:10307/img/author_hu_94d285e0358afd76.jpg 330w,//localhost:10307/img/author_hu_108f5f2c1de637fd.jpg 660w
           
-            ,//localhost:6844/img/author.jpg 960w
+            ,//localhost:10307/img/author.jpg 960w
           
           
-            ,//localhost:6844/img/author.jpg 960w
+            ,//localhost:10307/img/author.jpg 960w
           "
           sizes="100vw"
         
@@ -703,7 +891,7 @@ pip install -e &#39;.[inference]&#39;
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="group flex" href="//localhost:6844/posts/windows-11-%E5%88%9B%E5%BB%BA-hugo-%E7%BD%91%E7%AB%99/">
+            <a class="group flex" href="//localhost:10307/posts/windows-11-%E5%88%9B%E5%BB%BA-hugo-%E7%BD%91%E7%AB%99/">
               <span
                 class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
                 ><span class="ltr:inline rtl:hidden">&larr;</span
@@ -834,7 +1022,7 @@ pip install -e &#39;.[inference]&#39;
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="//localhost:6844/"
+  data-url="//localhost:10307/"
 >
   <div
     id="search-modal"
