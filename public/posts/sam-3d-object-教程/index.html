@@ -12,7 +12,7 @@
   class="scroll-smooth"
   data-default-appearance="light"
   data-auto-appearance="true"
-><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4733&amp;path=livereload" data-no-instant defer></script>
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=3025&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#FFFFFF" />
@@ -26,7 +26,7 @@
   
   <script
     type="text/javascript"
-    src="//localhost:4733/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    src="//localhost:3025/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
     integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
   ></script>
   
@@ -40,7 +40,7 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="//localhost:4733/css/main.bundle.min.a645f3fa02b2ca20e7ef61b236048d95cc9bc2e5b2faf1f0ac0aa85431187c1c.css"
+    href="//localhost:3025/css/main.bundle.min.a645f3fa02b2ca20e7ef61b236048d95cc9bc2e5b2faf1f0ac0aa85431187c1c.css"
     integrity="sha256-pkXz&#43;gKyyiDn72GyNgSNlcybwuWy&#43;vHwrAqoVDEYfBw="
   />
   
@@ -65,7 +65,7 @@
       defer
       type="text/javascript"
       id="script-bundle"
-      src="//localhost:4733/js/main.bundle.min.070067920d02c56c9946beddf173c3447422f0aa791b407cbe01a719ddf5f4dd.js"
+      src="//localhost:3025/js/main.bundle.min.070067920d02c56c9946beddf173c3447422f0aa791b407cbe01a719ddf5f4dd.js"
       integrity="sha256-BwBnkg0CxWyZRr7d8XPDRHQi8Kp5G0B8vgGnGd319N0="
       data-copy="复制"
       data-copied="已复制"
@@ -103,7 +103,7 @@ pip install -e &#39;.[inference]&#39;
   
   
   
-    <link rel="canonical" href="//localhost:4733/posts/sam-3d-object-%E6%95%99%E7%A8%8B/" />
+    <link rel="canonical" href="//localhost:3025/posts/sam-3d-object-%E6%95%99%E7%A8%8B/" />
   
   
   
@@ -119,7 +119,7 @@ pip install -e &#39;.[inference]&#39;
   
   
   
-  <meta property="og:url" content="//localhost:4733/posts/sam-3d-object-%E6%95%99%E7%A8%8B/">
+  <meta property="og:url" content="//localhost:3025/posts/sam-3d-object-%E6%95%99%E7%A8%8B/">
   <meta property="og:site_name" content="GentleOstrich">
   <meta property="og:title" content="SAM 3D Objects 教程">
   <meta property="og:description" content="安装 #参考官方安装教程在服务器上配置环境，服务器全程使用 clash 代理，使用 conda 安装
@@ -129,11 +129,11 @@ pip install -e &#39;.[inference]&#39;
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2026-01-15T00:00:00+00:00">
     <meta property="article:modified_time" content="2026-01-15T00:00:00+00:00">
-    <meta property="og:image" content="//localhost:4733/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature.jpg">
+    <meta property="og:image" content="//localhost:3025/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature.jpg">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="//localhost:4733/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature.jpg">
+  <meta name="twitter:image" content="//localhost:3025/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature.jpg">
   <meta name="twitter:title" content="SAM 3D Objects 教程">
   <meta name="twitter:description" content="安装 #参考官方安装教程在服务器上配置环境，服务器全程使用 clash 代理，使用 conda 安装
 环境配置 ## 克隆项目仓库 git clone https://github.com/facebookresearch/sam-3d-objects.git cd sam-3d-objects # 创建 conda 环境 conda env create -f environments/default.yml conda activate sam3d-objects # 设置 pytorch 等安装的 URL export PIP_EXTRA_INDEX_URL=&#34;https://pypi.ngc.nvidia.com https://download.pytorch.org/whl/cu121&#34; # 安装 sam 3d 核心依赖 pip install -e &#39;.[dev]&#39; pip install -e &#39;.[p3d]&#39; # pytorch3d dependency on pytorch is broken, this 2-step approach solves it # 安装 sam 3d 推理 export PIP_FIND_LINKS=&#34;https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-2.5.1_cu121.html&#34; pip install -e &#39;.[inference]&#39; 下载官方权重文件 #首先需要在 huggingface 上申请许可，笔者使用新邮箱创建了一个新的 huggingface 账户，在申请许可需要填入的个人信息中填写美国地址、学校等等，否则容易被拒。获得许可后，执行：">
@@ -149,7 +149,7 @@ pip install -e &#39;.[inference]&#39;
     
     "abstract": "\u003ch2 id=\u0022安装\u0022 class=\u0022relative group\u0022\u003e安装 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%e5%ae%89%e8%a3%85\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h2\u003e\u003cp\u003e参考\u003ca href=\u0022https:\/\/github.com\/facebookresearch\/sam-3d-objects\/blob\/main\/doc\/setup.md\u0022 target=\u0022_blank\u0022 rel=\u0022noreferrer\u0022\u003e官方安装教程\u003c\/a\u003e在服务器上配置环境，服务器全程使用 clash 代理，使用 conda 安装\u003c\/p\u003e\n\u003ch3 id=\u0022环境配置\u0022 class=\u0022relative group\u0022\u003e环境配置 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%e7%8e%af%e5%a2%83%e9%85%8d%e7%bd%ae\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 class=\u0022chroma\u0022\u003e\u003ccode class=\u0022language-shell\u0022 data-lang=\u0022shell\u0022\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022c1\u0022\u003e# 克隆项目仓库\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003egit clone https:\/\/github.com\/facebookresearch\/sam-3d-objects.git\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022nb\u0022\u003ecd\u003c\/span\u003e sam-3d-objects\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022c1\u0022\u003e# 创建 conda 环境\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003econda env create -f environments\/default.yml\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003econda activate sam3d-objects\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022c1\u0022\u003e# 设置 pytorch 等安装的 URL\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022nb\u0022\u003eexport\u003c\/span\u003e \u003cspan class=\u0022nv\u0022\u003ePIP_EXTRA_INDEX_URL\u003c\/span\u003e\u003cspan class=\u0022o\u0022\u003e=\u003c\/span\u003e\u003cspan class=\u0022s2\u0022\u003e\u0026#34;https:\/\/pypi.ngc.nvidia.com https:\/\/download.pytorch.org\/whl\/cu121\u0026#34;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022c1\u0022\u003e# 安装 sam 3d 核心依赖\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003epip install -e \u003cspan class=\u0022s1\u0022\u003e\u0026#39;.[dev]\u0026#39;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003epip install -e \u003cspan class=\u0022s1\u0022\u003e\u0026#39;.[p3d]\u0026#39;\u003c\/span\u003e \u003cspan class=\u0022c1\u0022\u003e# pytorch3d dependency on pytorch is broken, this 2-step approach solves it\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022c1\u0022\u003e# 安装 sam 3d 推理\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022nb\u0022\u003eexport\u003c\/span\u003e \u003cspan class=\u0022nv\u0022\u003ePIP_FIND_LINKS\u003c\/span\u003e\u003cspan class=\u0022o\u0022\u003e=\u003c\/span\u003e\u003cspan class=\u0022s2\u0022\u003e\u0026#34;https:\/\/nvidia-kaolin.s3.us-east-2.amazonaws.com\/torch-2.5.1_cu121.html\u0026#34;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003epip install -e \u003cspan class=\u0022s1\u0022\u003e\u0026#39;.[inference]\u0026#39;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003ch3 id=\u0022下载官方权重文件\u0022 class=\u0022relative group\u0022\u003e下载官方权重文件 \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%e4%b8%8b%e8%bd%bd%e5%ae%98%e6%96%b9%e6%9d%83%e9%87%8d%e6%96%87%e4%bb%b6\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003cp\u003e首先需要在 huggingface 上申请许可，笔者使用新邮箱创建了一个新的 huggingface 账户，在申请许可需要填入的个人信息中填写美国地址、学校等等，否则容易被拒。获得许可后，执行：\u003c\/p\u003e",
     "inLanguage": "zh-Hans",
-    "url" : "\/\/localhost:4733\/posts\/sam-3d-object-%E6%95%99%E7%A8%8B\/",
+    "url" : "\/\/localhost:3025\/posts\/sam-3d-object-%E6%95%99%E7%A8%8B\/",
     "author" : {
       "@type": "Person",
       "name": "GentleOstrich"
@@ -174,13 +174,13 @@ pip install -e &#39;.[inference]&#39;
    "itemListElement": [
      {
        "@type": "ListItem",
-       "item": "//localhost:4733/",
+       "item": "//localhost:3025/",
        "name": "",
        "position": 1
      },
      {
        "@type": "ListItem",
-       "item": "//localhost:4733/posts/",
+       "item": "//localhost:3025/posts/",
        "name": "",
        "position": 2
      },
@@ -341,7 +341,7 @@ pip install -e &#39;.[inference]&#39;
   <li class="hidden inline">
     <a
       class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
-      href="//localhost:4733/"
+      href="//localhost:3025/"
       ></a
     ><span class="px-1 text-primary-500">/</span>
   </li>
@@ -350,7 +350,7 @@ pip install -e &#39;.[inference]&#39;
   <li class=" inline">
     <a
       class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
-      href="//localhost:4733/posts/"
+      href="//localhost:3025/posts/"
       >posts</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
@@ -359,7 +359,7 @@ pip install -e &#39;.[inference]&#39;
   <li class="hidden inline">
     <a
       class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
-      href="//localhost:4733/posts/sam-3d-object-%E6%95%99%E7%A8%8B/"
+      href="//localhost:3025/posts/sam-3d-object-%E6%95%99%E7%A8%8B/"
       >SAM 3D Objects 教程</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
@@ -421,7 +421,7 @@ pip install -e &#39;.[inference]&#39;
         
           
             <a
-              href="//localhost:4733/topics/%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA/"
+              href="//localhost:3025/topics/%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA/"
               class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
               >三维重建</a
             >
@@ -459,12 +459,12 @@ pip install -e &#39;.[inference]&#39;
       
         <source
           
-            srcset="//localhost:4733/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_899318f2c248f34c.webp 330w,//localhost:4733/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_b1978a027bfec987.webp 660w
+            srcset="//localhost:3025/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_899318f2c248f34c.webp 330w,//localhost:3025/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_b1978a027bfec987.webp 660w
             
-              ,//localhost:4733/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_ef308b74de6da698.webp 1024w
+              ,//localhost:3025/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_ef308b74de6da698.webp 1024w
             
             
-              ,//localhost:4733/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_8a4c3ffac1aa6748.webp 1320w
+              ,//localhost:3025/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_8a4c3ffac1aa6748.webp 1320w
             "
           
           sizes="100vw"
@@ -478,12 +478,12 @@ pip install -e &#39;.[inference]&#39;
         
         
         
-          src="//localhost:4733/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_2039abf95eddb274.jpg" srcset="//localhost:4733/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_e0356ac7b644e6c.jpg 330w,//localhost:4733/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_2039abf95eddb274.jpg 660w
+          src="//localhost:3025/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_2039abf95eddb274.jpg" srcset="//localhost:3025/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_e0356ac7b644e6c.jpg 330w,//localhost:3025/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_2039abf95eddb274.jpg 660w
           
-            ,//localhost:4733/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_f285281d135b8b1c.jpg 1024w
+            ,//localhost:3025/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_f285281d135b8b1c.jpg 1024w
           
           
-            ,//localhost:4733/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_2a8fb396661b6c1a.jpg 1320w
+            ,//localhost:3025/posts/sam-3d-object-%E6%95%99%E7%A8%8B/feature_hu_2a8fb396661b6c1a.jpg 1320w
           "
           sizes="100vw"
         
@@ -847,12 +847,12 @@ pip install -e &#39;.[inference]&#39;
         alt="GentleOstrich"
         loading="lazy" decoding="async"
         
-          src="//localhost:4733/img/author_hu_108f5f2c1de637fd.jpg" srcset="//localhost:4733/img/author_hu_94d285e0358afd76.jpg 330w,//localhost:4733/img/author_hu_108f5f2c1de637fd.jpg 660w
+          src="//localhost:3025/img/author_hu_108f5f2c1de637fd.jpg" srcset="//localhost:3025/img/author_hu_94d285e0358afd76.jpg 330w,//localhost:3025/img/author_hu_108f5f2c1de637fd.jpg 660w
           
-            ,//localhost:4733/img/author.jpg 960w
+            ,//localhost:3025/img/author.jpg 960w
           
           
-            ,//localhost:4733/img/author.jpg 960w
+            ,//localhost:3025/img/author.jpg 960w
           "
           sizes="100vw"
         
@@ -891,7 +891,7 @@ pip install -e &#39;.[inference]&#39;
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="group flex" href="//localhost:4733/posts/windows-11-%E5%88%9B%E5%BB%BA-hugo-%E7%BD%91%E7%AB%99/">
+            <a class="group flex" href="//localhost:3025/posts/windows-11-%E5%88%9B%E5%BB%BA-hugo-%E7%BD%91%E7%AB%99/">
               <span
                 class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
                 ><span class="ltr:inline rtl:hidden">&larr;</span
@@ -913,7 +913,7 @@ pip install -e &#39;.[inference]&#39;
         </span>
         <span>
           
-            <a class="group flex text-right" href="//localhost:4733/posts/%E5%8C%97%E8%88%AA-buaa-2025-%E7%A7%8B%E7%A0%94%E7%A9%B6%E7%94%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%E5%9B%9E%E5%BF%86%E7%89%88/">
+            <a class="group flex text-right" href="//localhost:3025/posts/%E5%8C%97%E8%88%AA-buaa-2025-%E7%A7%8B%E7%A0%94%E7%A9%B6%E7%94%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%E5%9B%9E%E5%BF%86%E7%89%88/">
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
@@ -1041,7 +1041,7 @@ pip install -e &#39;.[inference]&#39;
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="//localhost:4733/"
+  data-url="//localhost:3025/"
 >
   <div
     id="search-modal"
