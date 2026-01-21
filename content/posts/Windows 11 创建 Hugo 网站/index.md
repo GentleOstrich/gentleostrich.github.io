@@ -301,20 +301,52 @@ hugo
 
 This is {{< year >}}, and look at how far we've come.
 
+{{<badge>}}
+2026-01-22 更新
+{{</badge>}}
+
+{{<icon "github">}}
+
+{{<icon "bilibili">}}
+
+{{<icon "BUAA">}}
+
+{{<alert "BUAA">}}
+**This is BUAA**
+{{</alert>}}
+
+![girl](girl.jpg "艾莉")
 
 
-{{< image path=miliya.jpg width=300 alt="milya" >}}
+{{< katex >}}
+\\(f(a,b,c) = (a^2+b^2+c^2)^3\\) 注意是两个斜杠
 
 
+\\(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\\)
 
 
+$$
+ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
+$$
 
 
+{{< lead >}}
+名人名言放在开头会显得很有逼格 —— 佚名
+{{< /lead >}}
 
 
+展示自我！
+
+{{< profile align="center" >}}
 
 
+关于 shortcode 还有许多东西，还没学习 ……
 
+
+## Partials
+{{<badge>}}
+TODO
+{{</badge>}}
 
 
 
