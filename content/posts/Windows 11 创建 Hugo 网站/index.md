@@ -315,7 +315,7 @@ This is {{< year >}}, and look at how far we've come.
 **This is BUAA**
 {{</alert>}}
 
-![girl](girl.jpg "艾莉")
+
 
 
 {{< katex >}}
