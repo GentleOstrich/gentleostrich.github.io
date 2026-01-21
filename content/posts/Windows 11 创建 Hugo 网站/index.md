@@ -311,10 +311,6 @@ This is {{< year >}}, and look at how far we've come.
 
 {{<icon "BUAA">}}
 
-{{<alert "BUAA">}}
-**这里太长了ghpage也不行！**
-{{</alert>}}
-
 
 
 **如何在文章中添加图片？传到ghpage上时，文章目录下不能有多余的图片？无法用shortcodes引用！！**
