@@ -312,7 +312,7 @@ This is {{< year >}}, and look at how far we've come.
 {{<icon "BUAA">}}
 
 {{<alert "BUAA">}}
-**This is BUAA**
+**如何在文章中添加图片？传到ghpage上时，文章目录下不能有多余的图片？无法用shortcodes引用！！**
 {{</alert>}}
 
 
@@ -347,7 +347,6 @@ $$
 {{<badge>}}
 TODO
 {{</badge>}}
-
 
 
 
