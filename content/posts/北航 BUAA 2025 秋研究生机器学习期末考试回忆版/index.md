@@ -2,7 +2,8 @@
 title: 北航 BUAA 2025 秋研究生机器学习期末考试回忆版
 date: 2026-01-19
 draft: false
-topics: ["BUAA"]
+categories: ["机器学习"]
+tags: ["BUAA"]
 ---
 {{< katex >}}
 考试已经过去一周了，根据依稀的记忆写下这篇考试回忆，希望能对后来的同学有所帮助。

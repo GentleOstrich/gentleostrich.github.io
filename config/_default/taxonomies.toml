@@ -1,1 +1,3 @@
-topic = "topics"
+# topic = "topics"
+category = "categories"
+tag = "tags"

@@ -2,7 +2,8 @@
 title: "Windows 11 创建 Hugo 网站"
 date: 2026-01-14
 draft: false
-topics: ["网络"]
+categories: ["网络"]
+tags: ["Hugo"]
 ---
 
 官方教程不允许使用 CMD、Windows PowerShell 执行各个命令，建议使用 PowerShell 执行命令。Anaconda Powershell Prompt 应该是基于 PowerShell 开发的，因此，本文的命令均在 Anaconda Powershell Prompt 中执行。

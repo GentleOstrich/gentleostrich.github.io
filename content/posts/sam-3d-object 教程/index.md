@@ -2,7 +2,8 @@
 title: "SAM 3D Objects 教程"
 date: 2026-01-15
 draft: false
-topics: ["三维重建"]
+categories: ["三维重建"]
+tags: ["SAM 3D"]
 ---
 
 ## 安装

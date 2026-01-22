@@ -15,8 +15,8 @@ title = "GentleOstrich"
 [params.author]
   name = "GentleOstrich"
   image = "img/author.jpg"
-  headline = "chill"
-  bio = ""
+  headline = "Easy come , easy go."
+  bio = "Chill"
   # links = [
   #   { email = "mailto:hello@your_domain.com" },
   #   { link = "https://link-to-some-website.com/" },
